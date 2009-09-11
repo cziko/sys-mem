@@ -10,7 +10,7 @@ begin
     gem.email = "niznik.pawel@gmail.com"
     gem.homepage = "http://github.com/cziko/sys-mem"
     gem.authors = ["cziko"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+    # gem.add_development_dependency "thoughtbot-shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
