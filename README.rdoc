@@ -1,4 +1,4 @@
-= sys-mem
+= Sys Mem (sys-mem)
 
 * The library helps to collect OS memory data.
 * For now data is returned in bytes.
