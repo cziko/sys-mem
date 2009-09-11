@@ -1,6 +1,23 @@
 = sys-mem
 
-Description goes here.
+* The library helps to collect OS memory data.
+* For now data is returned in bytes.
+* Suporrted systems: Linux.
+
+== Synopsis
+
+require "sys/mem"
+include Sys
+
+MEM.data_hash # -> returns OS memory data
+
+== Class Methods
+
+MEM.data_hash # -> returns Hash. All Class
+Methods are dynamically generated, method names 
+are based on Hash keys.
+
+MEM.(data_hash_key) # -> returns value in bytes
 
 == Note on Patches/Pull Requests
  
@@ -9,10 +26,16 @@ Description goes here.
 * Add tests for it. This is important so I don't break it in a
   future version unintentionally.
 * Commit, do not mess with rakefile, version, or history.
+
   (if you want to have your own version, that is fine but
    bump version in a commit by itself I can ignore when I pull)
+
 * Send me a pull request. Bonus points for topic branches.
 
 == Copyright
 
-Copyright (c) 2009 cziko. See LICENSE for details.
+Copyright (c) 2009 Paweł Niżnik (cziko). See LICENSE for details.
+
+== Inspired by
+
+* Daniel J. Berger -> sys-utils -> http://sysutils.rubyforge.org/

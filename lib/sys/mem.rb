@@ -19,7 +19,7 @@ module Sys
     $mem_hash[key.to_sym] = value
   }   
    
-  class Mem
+  class MEM
     def self.data_hash
       $mem_hash
     end
