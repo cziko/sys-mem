@@ -1,5 +1,4 @@
 module Sys 
-
   mem_file = "/proc/meminfo"
   $mem_hash = {}
   
@@ -13,14 +12,14 @@ module Sys
     key.downcase!
     val.strip! if val 
 
-    $mem_hash[key.to_sym] = val
+    # Converting strings to bytes
+    match_data_val = /\d*/.match val
+    value = match_data_val[0].to_i * 1024
+
+    $mem_hash[key.to_sym] = value
   }   
    
-  # TODO: 
-  # * Mem methods should return integer not strings,
-  #   default values should be in KB
   class Mem
-
     def self.data_hash
       $mem_hash
     end
@@ -32,14 +31,5 @@ module Sys
         end 
       end 
     end 
-
-    def self.total_memory
-      $mem_hash[:memtotal]
-    end
-    
-    def self.free_memory
-      $mem_hash[:memfree]
-    end
   end
-
 end
