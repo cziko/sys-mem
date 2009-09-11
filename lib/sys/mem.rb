@@ -20,7 +20,6 @@ module Sys
   # * Mem methods should return integer not strings,
   #   default values should be in KB
   class Mem
-    VERSION = '0.1.0'
 
     def self.data_hash
       $mem_hash
