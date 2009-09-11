@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/sys/mem.rb",
+     "sys-mem.gemspec",
      "test/sys-mem_test.rb",
      "test/test_helper.rb"
   ]
