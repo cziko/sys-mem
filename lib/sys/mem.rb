@@ -24,6 +24,9 @@ module Sys
       $mem_hash
     end
 
+    # TODO:
+    # * Methods should return bytes, kilobytes, mebagytes
+    #   depending on params
     (class << self; self; end).class_eval do
       $mem_hash.each_pair do |key, value|
         define_method key.to_sym do
