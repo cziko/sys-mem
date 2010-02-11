@@ -1,4 +1,6 @@
 module Sys 
+  # Should use instance variables insead of global ones
+  # Not really sure what was the reason for using $.
   $mem_file = "/proc/meminfo"
   $mem_hash = {}
   
